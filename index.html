@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="title">Mercadin do Juan</h1>
+            <button class="cart-btn" onclick="window.location.href='carrinho.html'">
+                <i class="fas fa-shopping-cart"></i> Carrinho
+                <span id="cart-count" class="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <br>
+        <h2>Produtos</h2>
+        <section class="product-list">
+            
+        
+            <div class="product" data-name="Notebook" data-price="6000">
+                <img src="imagens/notebook.avif" alt="Notebook" class="product-image">
+                <p>Notebook - R$ 6.000,00</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="product" data-name="Fone Gamer" data-price="150,00">
+                <img src="imagens/fone.webp" alt="Banana" class="product-image">
+                <p>Fone Gamer - R$ 150,00</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="product" data-name="Teclado" data-price="250">
+                <img src="imagens/Teclado.jpg" alt="Laranja" class="product-image">
+                <p>Teclado - R$ 250,00</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="product" data-name="Mouse" data-price="350">
+                <img src="imagens/mouse.jpg" alt="Uva" class="product-image">
+                <p>Mouse - R$ 350,00</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                </button>
+            </div>
+            <div class="product" data-name="Monitor" data-price="1000">
+                <img src="imagens/Monitor.jpg" alt="Pera" class="product-image">
+                <p>Monitor - R$ 1.000,00</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <br>
+        <p>&copy; 2024 DonJuanDev. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

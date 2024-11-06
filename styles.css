@@ -1,0 +1,256 @@
+/* Resetando estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    text-align: center; /* Centraliza todos os textos do corpo */
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza os itens do cabeçalho */
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative; /* Necessário para o título ser centralizado com posicionamento absoluto */
+}
+
+/* Título */
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center; /* Centraliza o título */
+    position: absolute; /* Posiciona o título de forma absoluta */
+    left: 50%; /* Move o título para o centro da largura do cabeçalho */
+    transform: translateX(-50%); /* Ajusta a posição para centralizar */
+}
+
+/* Botão de Carrinho */
+.cart-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: right;
+    gap: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 1600px; /* Faz o botão de carrinho ir para a direita */
+}
+
+.cart-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.cart-count {
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+/* Product List */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px; /* Aumentando o espaçamento entre os produtos */
+    width: 100%;
+    margin-top: 40px;
+    text-align: center; /* Centraliza os textos dentro da lista de produtos */
+}
+
+/* Produto */
+.product {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px; /* Aumentando o padding para dar mais espaço aos elementos dentro do produto */
+    text-align: center; /* Centraliza o texto dentro do produto */
+    width: 300px; /* Aumentando a largura dos produtos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 250px; /* Aumentando o tamanho da imagem */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Botão "Adicionar ao Carrinho" */
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 30px; /* Aumentando o tamanho do botão */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 20px; /* Aumentando o tamanho da fonte */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.add-to-cart i {
+    font-size: 20px;
+}
+
+/* Carrinho de Compras */
+.cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center; /* Centraliza os textos dentro do carrinho */
+}
+
+/* Item do Carrinho */
+.cart-items li {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px; /* Aumentando o tamanho dos itens do carrinho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    text-align: center; /* Centraliza o texto dentro de cada item do carrinho */
+}
+
+/* Botão Remover */
+.remove-item {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: #c9302c;
+}
+
+/* Resumo do Carrinho */
+.cart-summary {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Botão de Checkout */
+.checkout-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do Botão de Voltar */
+.back-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    position: absolute; /* Posiciona o botão fora do fluxo normal */
+    left: 20px; /* Alinha o botão à esquerda */
+}
+
+.back-button i {
+    font-size: 20px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.back-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 768px) {
+    .product-list {
+        justify-content: center;
+    }
+
+    .product {
+        width: 280px; /* Ajuste para telas menores */
+    }
+
+    .product-image {
+        width: 220px; /* Ajuste da imagem para telas menores */
+        height: 220px;
+    }
+
+    .cart-btn, .checkout-button {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
