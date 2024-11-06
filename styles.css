@@ -56,7 +56,7 @@ header {
     font-size: 18px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-left: 150%; /* Faz o botão de carrinho ir para a direita */
+     /* Faz o botão de carrinho ir para a direita */
 }
 
 .cart-btn:hover {
