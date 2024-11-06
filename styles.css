@@ -51,7 +51,7 @@ header {
     padding: 12px 25px;
     cursor: pointer;
     display: flex;
-    align-items: right;
+    align-items: center;
     gap: 8px;
     font-size: 18px;
     transition: background-color 0.3s ease, transform 0.3s ease;
